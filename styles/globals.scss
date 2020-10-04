@@ -1,0 +1,28 @@
+@import "/static/fonts/TTNorms/font-face.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-variant-ligatures: no-common-ligatures;
+  min-height: 100vh;
+  font-family: "TT Norms";
+  background-color: #343a40 !important;
+  letter-spacing: 1.5px;
+}
+
+.title-page {
+  font-family: "Chromate Reguler";
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

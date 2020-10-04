@@ -1,0 +1,23 @@
+#contacts-page {
+    .contact {
+        color: #ffff;
+        font-size: 16px;
+        position: relative;
+        .contact-icon {
+            left: 15%;
+            position: absolute;
+            opacity: 0.1;
+        }
+        .type-name {
+            font-family: "Chromate Reguler";
+            font-size: 18px;
+        }
+
+        .redirect-contact:hover {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid #dee2e6 !important;
+            padding-bottom: 0.5rem !important;
+        }
+    }
+}
