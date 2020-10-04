@@ -14,7 +14,7 @@ const careers = [
     },
 ]
 
-export default function About() {
+const About = () => {
 
     return (
         <div className={'container'} id="about-page">
@@ -71,3 +71,4 @@ function homeComp() {
 
     </>
 }
+export default About;

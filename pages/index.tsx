@@ -1,25 +1,27 @@
 import Head from 'next/head';
+import React from 'react';
 import MainLayout from '../components/main';
 
-export default function Home() {
-
-    return (
-        <div className={'container'}>
-            <MainLayout>
-                <div className="container pt-5">
-                    <div className="title-page text-center">
-                        <label htmlFor="">
-                            No Content #789 <br/>
-                            No Content #789 <br/>
-                            No Content #789 <br/>
-                            No Content #789 <br/>
-                            No Content #789 <br/>
-                        </label>
+class Home extends React.Component {
+    render() {
+        return (
+            <div className={'container'}>
+                <MainLayout>
+                    <div className="container pt-5">
+                        <div className="title-page text-center">
+                            <label htmlFor="">
+                                No Content #789 <br />
+                            No Content #789 <br />
+                            No Content #789 <br />
+                            No Content #789 <br />
+                            No Content #789 <br />
+                            </label>
+                        </div>
                     </div>
-                </div>
-            </MainLayout>
-        </div>
-    )
+                </MainLayout>
+            </div>
+        )
+    }
 }
 
 function homeComp() {
@@ -27,3 +29,5 @@ function homeComp() {
 
     </>
 }
+
+export default Home;

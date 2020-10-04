@@ -4,7 +4,7 @@ import '../../styles/article.scss'
 
 
 
-export default class Article extends React.Component {
+class Article extends React.Component {
     constructor(p) {
         super(p);
 
@@ -31,3 +31,5 @@ export default class Article extends React.Component {
         )
     }
 }
+
+export default Article;
