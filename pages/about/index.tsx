@@ -1,15 +1,12 @@
 import MainLayout from '../../components/main';
+import Link from 'next/link';
 import '../../styles/about.scss'
 
 const careers = [
     {
         companyName: 'Clodeo',
         division: 'Frontend Developer',
-        periode: 'May 2019 - Now'
-    },
-    {
-        companyName: 'Clodeo',
-        division: 'Frontend Developer',
+        redirect: 'https://clodeo.com/',
         periode: 'May 2019 - Now'
     },
 ]
@@ -26,9 +23,7 @@ const About = () => {
                     <div className="row">
                         <div className="col-12">
                             <div className="careers">
-                                <div className="about-icon w-50">
-                                    <img src="/img/SVG/about.svg" className="img-fluid" alt="" srcSet="" />
-                                </div>
+
                                 <div className="your-name">
                                     <span className="nick">Raafi</span> Muhammad
                                 </div>
@@ -44,7 +39,11 @@ const About = () => {
                                             return (
                                                 <li className="my-2" key={i}>
                                                     <div className="company-name">
-                                                        {c.companyName}
+                                                        <Link href={c.redirect}>
+                                                            <a target="_blank" rel="noopener noreferrer" className="redirect-company">
+                                                                {c.companyName}
+                                                            </a>
+                                                        </Link>
                                                     </div>
                                                     <div className="division-name">
                                                         {c.division}
@@ -56,6 +55,9 @@ const About = () => {
                                             )
                                         })}
                                     </ul>
+                                </div>
+                                <div className="about-icon w-50">
+                                    <img src="/img/SVG/about.svg" className="img-fluid" alt="" srcSet="" />
                                 </div>
                             </div>
                         </div>

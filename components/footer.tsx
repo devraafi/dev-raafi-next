@@ -5,7 +5,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <div id="footer-dev-raafi">
-                <div className="container">
+                <div className="container py-3">
                     <div className="row justify-content-between">
                         <div className="col-auto">
                             <label htmlFor="" className="v-footer rotate-90">2020 *</label>

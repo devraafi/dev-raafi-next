@@ -26,6 +26,13 @@
         .company-name {
             font-size: 17px;
             font-weight: bolder;
+
+            .redirect-company:hover {
+                color: white;
+                text-decoration: none;
+                border-bottom: 2px solid #dee2e6 !important;
+                padding-bottom: 0.25rem !important;
+            }
         }
 
         .division-name {
