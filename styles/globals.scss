@@ -26,3 +26,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.content-wrapper {
+  min-height: 80vh;
+}
+
+.v-footer {
+  font-family: "Chromate Reguler";
+  font-size: 15px;
+  color: #ffffff;
+  opacity: 0.6;
+  &.rotate-90 {
+    transform: rotate(-90deg);
+  }
+}
